@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto js</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Peristore</h1>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon-cart"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+            </svg>
+            <div class="count-products">
+                <span id="contador-productos">0</span>
+            </div>
+            </div>
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Auriculares HyperX Cloud Flight Black Wireless*</p>
+                            <span class="precio-producto-carrito">$68000</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$68000</span>
+                </div>
+            </div>
+            
+        </div>
+        <button class="btn-confirmar-compra">Confirmar Compra</button>
+        <div class="confirmation-message" id="confirmationMessage">Compra confirmada. El carrito ha sido vaciado.</div>
+
+        
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37263_Auriculares_HyperX_Cloud_Flight_Black_Wireless__037ef181-grn.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Auriculares HyperX Cloud Flight Black Wireless*</h2>
+                <p class="price">$68000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_29728_Teclado_Mecanico_Redragon_Dragonborn_K630_RGB_60__Outemu_Brown_White_cc705bb6-grn.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Teclado Mecanico Redragon Dragonborn K630 RGB 60% Outemu Brown </h2>
+                <p class="price">$24000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_35723_Teclado_Mecanico_Redragon_Fizz_Pro_K616-RGB_60__White_Pink_ddd16c00-grn.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Teclado Mecanico Redragon Fizz Pro K616-RGB 60% White/Pink </h2>
+                <p class="price">$29000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36087_Mouse_Glorious_Model_D__Glossy_White__2c49e11f-grn.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Mouse Glorious Model D (Glossy White) </h2>
+                <p class="price">$19000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_9518_Mouse_Logitech_G_PRO_Hero_Gaming_16000DPI_RGB_2934063c-grn.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Mouse Logitech G PRO Hero Gaming 16000DPI RGB</h2>
+                <p class="price">$32000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="proyecto.js"></script>
+</body>
+</html>
